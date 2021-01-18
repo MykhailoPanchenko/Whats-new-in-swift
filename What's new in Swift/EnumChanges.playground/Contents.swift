@@ -1,6 +1,6 @@
 import UIKit
 
-enum GameMode: Comparable{
+enum GameMode: Comparable {
     case easy
     case medium
     case hard

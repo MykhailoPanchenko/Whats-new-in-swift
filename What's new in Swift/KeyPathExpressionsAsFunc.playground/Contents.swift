@@ -1,20 +1,18 @@
 import UIKit
 
 struct Profile {
-    var name: String
     var id: Int
     var publisherCount: Int
 }
 
-let getID: KeyPath<Profile, Int> = \.id
-
-let profileA = Profile(name: "A", id: 1, publisherCount: 248)
-let profileB = Profile(name: "B", id: 2, publisherCount: 12)
-let profileC = Profile(name: "C", id: 0, publisherCount: 134)
-profileA[keyPath: getID]
-
-
+let profileA = Profile(id: 1, publisherCount: 248)
+let profileB = Profile(id: 2, publisherCount: 12)
+let profileC = Profile(id: 0, publisherCount: 134)
 let profiles = [profileA, profileC, profileB]
+
+let getID = \Profile.id
+
+profileA[keyPath: getID]
 
 profiles.map { $0[keyPath: \Profile.id] }
 profiles.map(\.id)
