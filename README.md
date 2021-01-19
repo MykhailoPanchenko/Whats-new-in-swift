@@ -1,4 +1,6 @@
-# Whats new in swift
+# What's new in swift
+Discover the latest updates on swift 5.3. Find out how to take advantage of new language features like multiple trailing closures. 
+You can find more information in a [presentation](https://drive.google.com/file/d/1nmZKj9HtQbPwzywTGBcBuFeOdrvSasJV/view?usp=sharing) and [video](https://web.microsoftstream.com/video/811b8b1f-d2c1-443e-9d89-7b66d5a80e7c).
 ## 1. Multiple Trailing Closures [SE-0279](https://github.com/apple/swift-evolution/blob/main/proposals/0279-multiple-trailing-closures.md)
 
 For example, we have initialization of class Alert like that:
@@ -230,3 +232,19 @@ prefix func ^ <Root, Value>(keyPath: KeyPath<Root, Value>) -> (Root) -> Value {
 
 profiles.map(^\.id)
 ```
+## Useful Links
+- [Swift Evolution](https://apple.github.io/swift-evolution/)
+- [What's new in swift](https://developer.apple.com/videos/play/wwdc2020/10170/)
+## Developed By
+
+* Panchenko Mykhailo, CHI Software
+* Kosyi Vlad, CHI Software
+
+## License
+Copyright 2020 CHI Software.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
